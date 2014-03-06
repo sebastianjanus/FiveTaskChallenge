@@ -33,4 +33,5 @@ Example
     dest_city: 4
     firstCityRoads: [1, 2, 3, 2, 5]
     secondCityRoads: [3, 3, 4, 4, 6]
-    Output 2
+    Output
+    2
