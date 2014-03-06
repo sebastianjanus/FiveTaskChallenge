@@ -1,4 +1,4 @@
-== Challenge 1: Deviation
+==Challenge 1: Deviation
 Given an array of integer elements and an integer d please consider all the sequences of d consecutive elements in the array. For each sequence we compute the difference between the maximum and the minimum value of the elements in that sequence and name it the deviation.
 Your task is to
 write a function that computes the maximum value among the deviations of all the sequences considered above
@@ -15,7 +15,7 @@ the value of d will not exceed the length of the given array
 Efficiency constraints
 your function is expected to print the result in less than 2 seconds
 
-== Example
+==Example
 
 Input
 v: 6, 9, 4, 7, 4, 1
