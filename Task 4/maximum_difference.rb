@@ -7,7 +7,6 @@ def maximum_difference_2(v)
 
   integral_sum = [0]
   max = 0
-  tmp_l_slide = Array.new
   for index in (0..v.length-1) do
     integral_sum.push(integral_sum[index] + v[index])
   end
@@ -36,7 +35,6 @@ def maximum_difference(v)
 
   integral_sum = [0]
   max = 0
-  tmp_l_slide = Array.new
   for index in (0..v.length-1) do
         integral_sum.push(integral_sum[index] + v[index])
   end
@@ -59,5 +57,6 @@ def maximum_difference(v)
 end
 
 v = [3, -5, 1, -2, 8, -2, 3, -2, 1]
-maximum_difference(v)
-maximum_difference_2(v)
+v2 = [ 7,-6,-2,-9,-9,5,0,0,-8,4]
+maximum_difference(v2)
+maximum_difference_2(v2)
