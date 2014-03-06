@@ -8,6 +8,7 @@ the difference between the sum of the elements in the right subsequence and the 
 print the difference to the standard output (stdout)
 Note that your function will receive the following arguments:
 - *v* which is the array of integers
+
 Data constraints
 --------------
 - the array has at least 2 and at most 1,000,000 numbers

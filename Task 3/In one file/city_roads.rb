@@ -135,19 +135,21 @@ def city_roads(n, home_city, dest_city, firstCityRoads,secondCityRoads)
 end
 
 if __FILE__ == $0
-#city_first= [1, 2, 3, 2, 5]
-#city_second=[3, 3, 4, 4, 6]
+city_first= [1, 2, 3, 2, 5]
+city_second=[3, 3, 4, 4, 6]
 arr = Array.new
-
+=begin extended testing
 File.foreach('world_map').map { |line| arr<<line.split(" ")}
 cities_t = arr[0].map {|x| x.to_i}
 cities= cities_t[0]
 city_first=arr[1].map {|x| x.to_i}
 city_second=arr[2].map {|x| x.to_i}
 
+=end
+
 home = 1
-dest = 78
-n = cities
+dest = 4
+n = 7
 
 city_roads(n,home,dest,city_first,city_second)
 
