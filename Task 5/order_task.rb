@@ -2,11 +2,10 @@
 
 class Node
   attr_reader :id
-  attr_accessor :dep_of, :exe_bf
+  attr_accessor :exe_bf
   def initialize(id)
     @id = id
-    @exe_bf = Array.new() #all those HAVE to be executed before ID can be executed
-    @dep_of = Array.new() #it has to be executed before DEP_OF can be executed
+    @exe_bf = Array.new()
   end
 end
 
@@ -47,7 +46,6 @@ def order_task(dependencyFirst, dependencySecond, totalNumTasks)
 
   order = Array.new()
   for first in (0..dependencyFirst.length-1) do
-    allNodes[dependencyFirst[first]-1].dep_of << dependencySecond[first]
     allNodes[dependencySecond[first]-1].exe_bf << dependencyFirst[first]
   end
 
@@ -70,8 +68,8 @@ def order_task(dependencyFirst, dependencySecond, totalNumTasks)
   puts " "
 end
 
-dependencyFirst = [3,1,2,1,6]
-dependencySecond = [2,2,4,3,3]
+dependencyFirst = [3,1,2]
+dependencySecond = [2,2,4]
 totalNumTasks = 6
 
 order_task(dependencyFirst, dependencySecond,totalNumTasks)
