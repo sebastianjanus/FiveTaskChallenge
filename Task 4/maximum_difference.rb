@@ -58,6 +58,6 @@ def maximum_difference(v)
   puts "#{max}"
 end
 
-v = [3, -5, 1, -2, 8, -2, 3, -2, 1,13]
+v = [3, -5, 1, -2, 8, -2, 3, -2, 1]
 maximum_difference(v)
 maximum_difference_2(v)
