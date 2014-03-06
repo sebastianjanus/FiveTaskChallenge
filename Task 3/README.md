@@ -23,3 +23,14 @@ Data constraints
 Efficiency constraints
 --------------
 your function is expected to print the result in less than 2 seconds
+
+Example
+--------------
+
+    Input
+    N: 7
+    home_city: 1
+    dest_city: 4
+    firstCityRoads: [1, 2, 3, 2, 5]
+    secondCityRoads: [3, 3, 4, 4, 6]
+    Output 2
