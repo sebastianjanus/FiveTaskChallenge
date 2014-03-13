@@ -35,7 +35,7 @@ def search_breadth(allNodes, index, order)
 end
 
 
-def order_task(dependencyFirst, dependencySecond, totalNumTasks)
+def order_tasks(dependencyFirst, dependencySecond, totalNumTasks)
 
   allNodes=init_nodes(totalNumTasks)
   stack = Array.new()

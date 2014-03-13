@@ -125,7 +125,7 @@ def shortest_way(start_id, end_id, country)
   end
 end
 
-def city_roads(n, home_city, dest_city, firstCityRoads,secondCityRoads)
+def find_city(n, home_city, dest_city, firstCityRoads,secondCityRoads)
 
   country = Map.new()
   gen_nodes(n, country)
